@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "413242373920",
+    "firebase_url": "https://weather-outlook-34263.firebaseio.com",
+    "project_id": "weather-outlook-34263",
+    "storage_bucket": "weather-outlook-34263.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413242373920:android:1b2a2b36562e0ec88d0945",
+        "android_client_info": {
+          "package_name": "com.chel.weatheroutlook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "413242373920-69mh4ejt4671jjbcracsfm0gcd28l1sj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chel.weatheroutlook",
+            "certificate_hash": "71b1d63ae64e5c0a0b945835272b231f4f538952"
+          }
+        },
+        {
+          "client_id": "413242373920-csm0e5ba66md11ed5sfafjj6q3gv6js3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMJdcWuYeLLZqn5NscRkCQ7KMoh_a08lg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "413242373920-csm0e5ba66md11ed5sfafjj6q3gv6js3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
