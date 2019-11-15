@@ -8,8 +8,8 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
-//    private DrawerLayout mDrawerlayout;
-//    private ActionBarDrawerToggle mToggle;
+    private DrawerLayout mDrawerlayout;
+    private ActionBarDrawerToggle mToggle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
