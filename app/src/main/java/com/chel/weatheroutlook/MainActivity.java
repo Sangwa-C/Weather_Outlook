@@ -23,13 +23,13 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item){
-//
-//        if (mToggle.onOptionsItemSelected( item )){
-//            return true;
-//        }
-//
-//        return super.onOptionsItemSelected( item );
-//    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+
+        if (mToggle.onOptionsItemSelected( item )){
+            return true;
+        }
+
+        return super.onOptionsItemSelected( item );
+    }
 }
