@@ -16,11 +16,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_main );
 
-//        mDrawerlayout = findViewById( R.id.activity_main);
-//        mToggle = new ActionBarDrawerToggle(this,mDrawerlayout,R.string.open, R.string.close);
-//        mDrawerlayout.addDrawerListener( mToggle);
-//        mToggle.syncState();
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        mDrawerlayout = findViewById( R.id.activity_main);
+        mToggle = new ActionBarDrawerToggle(this,mDrawerlayout,R.string.open, R.string.close);
+        mDrawerlayout.addDrawerListener( mToggle);
+        mToggle.syncState();
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
 //    @Override
