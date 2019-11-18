@@ -73,16 +73,16 @@ public class MainActivity extends AppCompatActivity {
         setTitle(menuItem.getTitle());
         mDrawerLayout.closeDrawers();
     }
-//
-//    private void setupDrawerContent(NavigationView navigationView){
-//        navigationView.setNavigationItemSelectedListener( new NavigationView.OnNavigationItemSelectedListener() {
-//            @Override
-//            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-//                selectItemDrawer(menuItem);
-//                return true;
-//            }
-//        } );{
-//
-//        }
-//    }
+
+    private void setupDrawerContent(NavigationView navigationView){
+        navigationView.setNavigationItemSelectedListener( new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                selectItemDrawer(menuItem);
+                return true;
+            }
+        } );{
+
+        }
+    }
 }
