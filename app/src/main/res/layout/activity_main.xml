@@ -5,14 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/activity_main"
+    android:textColor="#FDF8FCFC"
     tools:context="MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/f1content"/>
 
 
     <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_header"
         app:headerLayout="@layout/nav_header"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:background="#020720"
+        android:background="#131A50"
         app:menu="@menu/drawer_menu"
         app:itemTextColor="#FDF8FCFC"
         app:itemIconTint="#FCBADABA"
