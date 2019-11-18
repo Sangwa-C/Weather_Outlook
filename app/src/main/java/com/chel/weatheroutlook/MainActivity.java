@@ -67,12 +67,12 @@ public class MainActivity extends AppCompatActivity {
         catch (Exception e){
             e.printStackTrace();
         }
-//        FragmentManager fragmentManager = getSupportFragmentManager();
-//        fragmentManager.beginTransaction().replace(R.id.f1content,myFragment).commit();
-//        menuItem.setChecked( true );
-//        setTitle(menuItem.getTitle());
-//        mDrawerLayout.closeDrawers();
-//    }
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.f1content,myFragment).commit();
+        menuItem.setChecked( true );
+        setTitle(menuItem.getTitle());
+        mDrawerLayout.closeDrawers();
+    }
 //
 //    private void setupDrawerContent(NavigationView navigationView){
 //        navigationView.setNavigationItemSelectedListener( new NavigationView.OnNavigationItemSelectedListener() {
