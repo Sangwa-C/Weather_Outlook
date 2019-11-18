@@ -42,25 +42,25 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected( item );
     }
-//
-//    public void selectItemDrawer(MenuItem menuItem){
-//        Fragment myFragment = null;
-//        Class fragmentClass;
-//        switch (menuItem.getItemId()){
-//            case R.id.nav_location:
-//                fragmentClass = Edit_location.class;
-//                break;
-//
-//            case R.id.nav_language:
-//                fragmentClass = Language.class;
-//                break;
-//
-//            case R.id.nav_help:
-//                fragmentClass = Help.class;
-//
-//            default:
-//                fragmentClass = Edit_location.class;
-//        }
+
+    public void selectItemDrawer(MenuItem menuItem){
+        Fragment myFragment = null;
+        Class fragmentClass;
+        switch (menuItem.getItemId()){
+            case R.id.nav_location:
+                fragmentClass = Edit_location.class;
+                break;
+
+            case R.id.nav_language:
+                fragmentClass = Language.class;
+                break;
+
+            case R.id.nav_help:
+                fragmentClass = Help.class;
+
+            default:
+                fragmentClass = Edit_location.class;
+        }
 //        try {
 //            myFragment = (Fragment) fragmentClass.newInstance();
 //        }
