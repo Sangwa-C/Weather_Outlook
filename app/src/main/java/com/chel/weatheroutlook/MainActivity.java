@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         mToggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         NavigationView nvDrawer = (NavigationView) findViewById( R.id.nav_header );
-//        setupDrawerContent(  nvDrawer);
+        setupDrawerContent(  nvDrawer);
     }
 
     @Override
