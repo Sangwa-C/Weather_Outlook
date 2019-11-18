@@ -61,12 +61,12 @@ public class MainActivity extends AppCompatActivity {
             default:
                 fragmentClass = Edit_location.class;
         }
-//        try {
-//            myFragment = (Fragment) fragmentClass.newInstance();
-//        }
-//        catch (Exception e){
-//            e.printStackTrace();
-//        }
+        try {
+            myFragment = (Fragment) fragmentClass.newInstance();
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
 //        FragmentManager fragmentManager = getSupportFragmentManager();
 //        fragmentManager.beginTransaction().replace(R.id.f1content,myFragment).commit();
 //        menuItem.setChecked( true );
