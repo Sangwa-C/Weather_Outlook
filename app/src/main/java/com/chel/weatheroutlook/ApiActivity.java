@@ -1,9 +1,9 @@
 package com.chel.weatheroutlook;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.AsyncTask;
 import android.os.Bundle;
+
 import android.view.View;
 import android.widget.TextView;
 
@@ -18,11 +18,12 @@ import java.util.Locale;
 
 public class ApiActivity extends AppCompatActivity {
 
+
     String CITY = "kigali";
     String API = "4de3768c62b67fe359758977a3efc069";
 
     TextView addressTxt, updated_atTxt, statusTxt, tempTxt, temp_minTxt, temp_maxTxt, sunriseTxt,
-            sunsetTxt, windTxt, pressureTxt, humidityTxt;
+            sunsetTxt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +38,7 @@ public class ApiActivity extends AppCompatActivity {
         temp_maxTxt = findViewById(R.id.temp_max);
         sunriseTxt = findViewById(R.id.sunrise);
         sunsetTxt = findViewById(R.id.sunset);
-        windTxt = findViewById(R.id.wind);
+
 
         new weatherTask().execute();
     }
@@ -73,12 +74,9 @@ public class ApiActivity extends AppCompatActivity {
                 String temp = main.getString("temp") + "°C";
                 String tempMin = "Min Temp: " + main.getString("temp_min") + "°C";
                 String tempMax = "Max Temp: " + main.getString("temp_max") + "°C";
-                String pressure = main.getString("pressure");
-                String humidity = main.getString("humidity");
 
                 Long sunrise = sys.getLong("sunrise");
                 Long sunset = sys.getLong("sunset");
-                String windSpeed = wind.getString("speed");
                 String weatherDescription = weather.getString("description");
 
                 String address = jsonObj.getString("name") + ", " + sys.getString("country");
@@ -93,9 +91,7 @@ public class ApiActivity extends AppCompatActivity {
                 temp_maxTxt.setText(tempMax);
                 sunriseTxt.setText(new SimpleDateFormat("hh:mm a", Locale.ENGLISH).format(new Date(sunrise * 1000)));
                 sunsetTxt.setText(new SimpleDateFormat("hh:mm a", Locale.ENGLISH).format(new Date(sunset * 1000)));
-                windTxt.setText(windSpeed);
-                pressureTxt.setText(pressure);
-                humidityTxt.setText(humidity);
+
 
                 /* Views populated, Hiding the loader, Showing the main design */
                 findViewById(R.id.loader).setVisibility(View.GONE);
@@ -110,4 +106,3 @@ public class ApiActivity extends AppCompatActivity {
         }
     }
 }
-
