@@ -18,7 +18,6 @@ import java.util.Locale;
 
 public class ApiActivity extends AppCompatActivity {
 
-
     String CITY = "kigali";
     String API = "4de3768c62b67fe359758977a3efc069";
 
