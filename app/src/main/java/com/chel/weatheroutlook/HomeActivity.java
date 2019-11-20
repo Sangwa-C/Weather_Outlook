@@ -12,7 +12,7 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home2);
-        int[] images = {R.drawable.img1, R.drawable.img2, R.drawable.img3, R.drawable.img4, R.drawable.img5, R.drawable.img6,R.drawable.img7};
+        int[] images = {R.drawable.sunny, R.drawable.rain,R.drawable.rainsto};
         v_flipper = findViewById(R.id.v_flipper1);
 
         for(int image: images){
