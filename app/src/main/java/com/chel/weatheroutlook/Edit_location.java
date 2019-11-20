@@ -1,7 +1,10 @@
 package com.chel.weatheroutlook;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,6 +12,11 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.SearchView;
+
+import butterknife.BindView;
 
 
 /**
@@ -19,17 +27,27 @@ import android.view.ViewGroup;
  * Use the {@link Edit_location#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Edit_location extends Fragment {
+public class Edit_location extends Fragment implements View.OnClickListener {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+
+    private static final String TAG = Edit_location.class.getSimpleName();
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    private SearchView searchLocation;
+    private EditText clotheWanted;
+    private Button findLocationButton;
+    @BindView( R.id.findLocationButton ) Button mFindLocationButton;
+    @BindView(R.id.clotheWanted) EditText mLocationEditText;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+    private LayoutInflater inflater;
+    private ViewGroup container;
+    private Bundle savedInstanceState;
 
     public Edit_location() {
         // Required empty public constructor
@@ -60,14 +78,20 @@ public class Edit_location extends Fragment {
             mParam1 = getArguments().getString( ARG_PARAM1 );
             mParam2 = getArguments().getString( ARG_PARAM2 );
         }
+
+//        searchLocation = searchLocation.findViewById(R.id.searchLocation);
+
+//        searchLocation.setOnClickListener( this );
+
+
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater , ViewGroup container ,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate( R.layout.fragment_edit_location , container , false );
-    }
+//    @Override
+//    public View onCreateView(LayoutInflater inflater , ViewGroup container ,
+//                             Bundle savedInstanceState) {
+//        // Inflate the layout for this fragment
+//        return inflater.inflate( R.layout.fragment_edit_location , container , false );
+//    }
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
@@ -88,6 +112,8 @@ public class Edit_location extends Fragment {
         mListener = null;
     }
 
+
+
     /**
      * This interface must be implemented by activities that contain this
      * fragment to allow an interaction in this fragment to be communicated
@@ -101,5 +127,28 @@ public class Edit_location extends Fragment {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        this.inflater = inflater;
+        this.container = container;
+        this.savedInstanceState = savedInstanceState;
+        View view = inflater.inflate(R.layout.fragment_edit_location, container, false);
+        return view;
+    }
+
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        Button searchLocation = (Button) getActivity().findViewById( R.id.findLocationButton);
+        searchLocation.setOnClickListener((View.OnClickListener) this);
+    }
+
+    @Override
+    public void onClick(View v) {
+//        String locationName = clotheWanted.getText().toString();
+        Intent intent = new Intent(getActivity(), MainActivity.class);
+//        intent.putExtra("locationName", locationName);
+        startActivity(intent);
     }
 }

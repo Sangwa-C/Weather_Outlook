@@ -7,22 +7,35 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import android.content.Intent;
 import android.location.Location;
 import android.net.Network;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.MenuItem;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
+
+import butterknife.BindView;
 
 public class MainActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
+//    @BindView(R.id.clothesTextView) TextView mClothesTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_main );
+
+////        Intent intent = getIntent();
+////        String locationName = intent.getStringExtra("locationName");
+////
+//////        mClothesTextView.setText("For this search "  + " ' "  + locationName   + " ' " + " we have: ");
+//
+//        Toast.makeText(MainActivity.this, locationName, Toast.LENGTH_LONG).show();
 
         mDrawerLayout = findViewById( R.id.activity_main);
         mToggle = new ActionBarDrawerToggle(this,mDrawerLayout,R.string.open, R.string.close);
@@ -85,4 +98,6 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+
+
 }
