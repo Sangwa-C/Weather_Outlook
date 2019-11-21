@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-public class rate extends AppCompatActivity  {
+public class Rate extends AppCompatActivity  {
     private RatingBar ratingBar ;
     private Button Submit_button;
     private TextView RateTextView;

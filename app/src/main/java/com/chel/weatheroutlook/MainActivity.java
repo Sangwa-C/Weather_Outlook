@@ -49,40 +49,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public boolean selectItemDrawer(MenuItem menuItem){
-//        Fragment myFragment = null;
-//        Class fragmentClass;
-//        switch (menuItem.getItemId()){
-//            case R.id.nav_location:
-//                fragmentClass = Edit_location.class;
-//                break;
-//
-//            case R.id.nav_language:
-//                fragmentClass = Language.class;
-//                break;
-//
-//            case R.id.nav_settings:
-//                fragmentClass = Settings.class;
-//                break;
-//
-//            case R.id.nav_help:
-//                fragmentClass = Help.class;
-//                break;
-//
-//            case R.id.nav_rate:
-//                fragmentClass = Rate.class;
-//                break;
-//
-//            default:
-//                fragmentClass = Edit_location.class;
-//        }
-//        try {
-//            myFragment = (Fragment) fragmentClass.newInstance();
-//        }
-//        catch (Exception e){
-//            e.printStackTrace();
-//        }
-//        FragmentManager fragmentManager = getSupportFragmentManager();
-//        fragmentManager.beginTransaction().replace(R.id.f1content,myFragment).commit();
+
         menuItem.setChecked( true );
         setTitle(menuItem.getTitle());
         mDrawerLayout.closeDrawers();
@@ -94,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity( intent );
             return true;
         } else if (id == R.id.nav_rate){
-            Intent intent = new Intent( MainActivity.this, rate.class );
+            Intent intent = new Intent( MainActivity.this, Rate.class );
             startActivity( intent );
             return true;
         }

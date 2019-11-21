@@ -11,7 +11,11 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Language_1"></activity>
         <activity android:name=".EditLocation" />
-        <activity android:name=".rate" />
+        <activity android:name=".Rate">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chel.weatheroutlook.MainActivity" />
+        </activity>
         <activity android:name=".Main2Activity" />
         <activity android:name=".MainActivity">
             <intent-filter>
