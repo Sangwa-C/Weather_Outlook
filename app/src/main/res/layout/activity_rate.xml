@@ -4,6 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    tools:context=".RateActivity">
+
+            <TextView
+                android:id="@+id/TextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="136dp"
+                android:text="Tell others what you think about this app by selecting stars, what you selected will be display after submitting"
+                android:textSize="20dp"
+                />
+
     tools:context=".Rate">
 
     <TextView
@@ -58,6 +69,7 @@
         android:text="~Your rating will apper here~"
         android:textSize="22dp"
         app:fontFamily="@font/allan"/>
+
 
 
 </RelativeLayout>
