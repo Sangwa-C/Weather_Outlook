@@ -11,7 +11,6 @@ import android.content.Intent;
 import android.location.Location;
 import android.net.Network;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -68,8 +67,16 @@ public class MainActivity extends AppCompatActivity {
                 fragmentClass = Language.class;
                 break;
 
+            case R.id.nav_settings:
+                fragmentClass = Settings.class;
+                break;
+
             case R.id.nav_help:
                 fragmentClass = Help.class;
+                break;
+
+            case R.id.nav_rate:
+                fragmentClass = Rate.class;
 
             default:
                 fragmentClass = Edit_location.class;
@@ -98,6 +105,14 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+
+//       if(v == mFindMallButton) {
+//        String location = mLocationEditText.getText().toString();
+//        saveLocationToFirebase(location);
+//        Intent cheHome = new Intent(ImagesActivity.this, MallsActivity.class);
+//        cheHome.putExtra("kigali", location);
+//        startActivity(cheHome);
+//    }
 
 
 }
