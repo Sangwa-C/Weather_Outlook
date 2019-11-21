@@ -6,10 +6,8 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
 
-public class CenterActivity2 extends AppCompatActivity {
+public class HelpActivity extends AppCompatActivity {
     private CardView cardView1;
     private CardView cardView2;
     private CardView cardView3;
@@ -19,14 +17,14 @@ public class CenterActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_center2);
+        setContentView(R.layout.activity_help );
 
         cardView1 = (CardView)  findViewById(R.id.button1);
         cardView1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
 
-                Intent intent= new Intent(CenterActivity2.this,SearchActivity.class);
+                Intent intent= new Intent( HelpActivity.this,SearchActivity.class);
                 startActivity(intent);
             }
         });
@@ -37,7 +35,7 @@ public class CenterActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent= new Intent(CenterActivity2.this,LocationAtivity.class);
+                Intent intent= new Intent( HelpActivity.this,LocationAtivity.class);
                 startActivity(intent);
             }
         });
@@ -48,7 +46,7 @@ public class CenterActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent= new Intent(CenterActivity2.this,NavigationActivity.class);
+                Intent intent= new Intent( HelpActivity.this,NavigationActivity.class);
                 startActivity(intent);
             }
         });
@@ -59,7 +57,7 @@ public class CenterActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent= new Intent(CenterActivity2.this,RateActivity.class);
+                Intent intent= new Intent( HelpActivity.this,RateActivity.class);
                 startActivity(intent);
             }
         });
@@ -70,7 +68,7 @@ public class CenterActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent= new Intent(CenterActivity2.this,LanguageActivity.class);
+                Intent intent= new Intent( HelpActivity.this,LanguageActivity.class);
                 startActivity(intent);
             }
         });
@@ -81,7 +79,7 @@ public class CenterActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent= new Intent(CenterActivity2.this,PrivateActivity.class);
+                Intent intent= new Intent( HelpActivity.this,PrivateActivity.class);
                 startActivity(intent);
             }
         });

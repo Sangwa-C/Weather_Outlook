@@ -23,7 +23,7 @@ private Button button;
 
         }
         public void CenterActivity2(){
-        Intent intent= new Intent(this,CenterActivity2.class);
+        Intent intent= new Intent(this, HelpActivity.class);
         startActivity(intent);
         }
     }

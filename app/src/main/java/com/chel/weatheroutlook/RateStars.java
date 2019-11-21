@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.RatingBar;
 import android.widget.TextView;
 
-public class Rate extends AppCompatActivity  {
+public class RateStars extends AppCompatActivity  {
     private RatingBar ratingBar ;
     private Button Submit_button;
     private TextView RateTextView;
@@ -16,7 +16,7 @@ public class Rate extends AppCompatActivity  {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
-        setContentView( R.layout.activity_rate );
+        setContentView( R.layout.activity_rate_stars );
 
 
         ratingBar = findViewById(R.id.ratingBar);

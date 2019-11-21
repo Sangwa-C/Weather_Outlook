@@ -4,72 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     tools:context=".RateActivity">
 
-            <TextView
-                android:id="@+id/TextView1"
-                android:layout_width="wrap_content"
-                android:layout_height="136dp"
-                android:text="Tell others what you think about this app by selecting stars, what you selected will be display after submitting"
-                android:textSize="20dp"
-                />
 
-    tools:context=".Rate">
-
-    <TextView
-        android:id="@+id/rate_this_app"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="80dp"
-        android:text="Rate this App"
-        android:textSize="45dp"
-        app:fontFamily="@font/noto_sans" />
-
-    <TextView
-        android:id="@+id/rate_words"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/rate_this_app"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="24dp"
-        android:text="Tell other what you think about this app"
-        android:textSize="22dp"
-        app:fontFamily="@font/allan" />
-
-    <RatingBar
-        android:id="@+id/ratingBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:numStars="5"
-        android:stepSize=".5"
-        android:layout_marginBottom="20dp"/>
-
-    <Button
-        android:id="@+id/Submit_button"
-        android:layout_width="wrap_content"
-        android:layout_height="36dp"
-        android:layout_centerInParent="true"
-        android:layout_below="@+id/ratingBar"
-        android:text="Submit"
-        android:layout_marginBottom="20dp"/>
-
-    <TextView
-        android:id="@+id/RateTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_below="@+id/Submit_button"
-        android:text="~Your rating will apper here~"
-        android:textSize="22dp"
-        app:fontFamily="@font/allan"/>
-
+        <TextView
+            android:id="@+id/TextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="136dp"
+            android:text="Tell others what you think about this app by selecting stars, what you selected will be display after submitting"
+            android:textSize="20dp"
+            />
 
 
 </RelativeLayout>

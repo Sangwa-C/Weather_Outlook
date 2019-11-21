@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             return true;
         } else
             if (id == R.id.nav_rate){
-            Intent intent = new Intent( MainActivity.this, Rate.class );
+            Intent intent = new Intent( MainActivity.this, RateStars.class );
             startActivity( intent );
             return true;
         } else
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }else
             if (id == R.id.nav_help){
-                Intent intent = new Intent( MainActivity.this, Help.class );
+                Intent intent = new Intent( MainActivity.this, HelpActivity.class );
                 startActivity( intent );
                 return true;
             }
