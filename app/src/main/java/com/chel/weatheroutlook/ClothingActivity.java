@@ -65,14 +65,38 @@ public class ClothingActivity extends AppCompatActivity {
                 break;
 
             case "female":
-                if (mMinTemp>=20.0 && mMaxTemp<=30.0){
-                    int imageResource = getResources().getIdentifier("@drawable/femaleprofile",null,this.getPackageName());
+                if (mMaxTemp<=5.000){
+                    int imageResource = getResources().getIdentifier("@drawable/fharshwinter",null,this.getPackageName());
+                    mImage.setImageResource(imageResource);
+                }
+                else if (mMinTemp>5.000 && mMaxTemp<=10.900){
+                    int imageResource = getResources().getIdentifier("@drawable/fwinter",null,this.getPackageName());
+                    mImage.setImageResource(imageResource);
+                }
+                else if (mMinTemp>10.900 && mMaxTemp<=20.900){
+                    int imageResource = getResources().getIdentifier("@drawable/fcold",null,this.getPackageName());
+                    mImage.setImageResource(imageResource);
+                }
+                else if (mMinTemp>20.900 && mMaxTemp<=25.900){
+                    int imageResource = getResources().getIdentifier("@drawable/fwarm",null,this.getPackageName());
+                    mImage.setImageResource(imageResource);
+                }
+                else if (mMinTemp>25.900 && mMaxTemp<=30.900){
+                    int imageResource = getResources().getIdentifier("@drawable/fcasual",null,this.getPackageName());
+                    mImage.setImageResource(imageResource);
+                }
+                else if (mMinTemp>30.900 && mMaxTemp<=35.900){
+                    int imageResource = getResources().getIdentifier("@drawable/fsunny",null,this.getPackageName());
+                    mImage.setImageResource(imageResource);
+                }
+                else if (mMaxTemp>35.900){
+                    int imageResource = getResources().getIdentifier("@drawable/fextrasunny",null,this.getPackageName());
                     mImage.setImageResource(imageResource);
                 }
                 else {
-                    Log.d(TAG," female not set yet");
+                    Log.d(TAG," error female");
                 }
-            break;
+                break;
 
             default:
                 Log.d(TAG,"Error");
