@@ -9,6 +9,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.RatingBar;
+import android.widget.TextView;
 
 
 /**
@@ -24,6 +27,10 @@ public class Rate extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+
+    private RatingBar ratingBar ;
+    private Button Submit_button;
+    private TextView RateTextView;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -60,6 +67,17 @@ public class Rate extends Fragment {
             mParam1 = getArguments().getString( ARG_PARAM1 );
             mParam2 = getArguments().getString( ARG_PARAM2 );
         }
+
+//        ratingBar = ratingBar.findViewById(R.id.ratingBar);
+//        Submit_button = Submit_button.findViewById(R.id.Submit_button);
+//        RateTextView = RateTextView.findViewById(R.id.RateTextView);
+
+//        Submit_button.setOnClickListener( new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                RateTextView.setText( "your rating is; " + ratingBar.getRating() );
+//            }
+//        } );
     }
 
     @Override

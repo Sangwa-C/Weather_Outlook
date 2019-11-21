@@ -77,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.nav_rate:
                 fragmentClass = Rate.class;
+                break;
 
             default:
                 fragmentClass = Edit_location.class;
