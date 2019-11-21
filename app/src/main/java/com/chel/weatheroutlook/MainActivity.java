@@ -60,15 +60,23 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent( MainActivity.this, Language_1.class );
             startActivity( intent );
             return true;
-        } else if (id == R.id.nav_rate){
+        } else
+            if (id == R.id.nav_rate){
             Intent intent = new Intent( MainActivity.this, Rate.class );
             startActivity( intent );
             return true;
-        } else if (id == R.id.nav_location){
+        } else
+            if (id == R.id.nav_location){
             Intent intent = new Intent( MainActivity.this, EditLocation.class );
             startActivity( intent );
             return true;
-        }
+        }else
+            if (id == R.id.nav_help){
+                Intent intent = new Intent( MainActivity.this, Help.class );
+                startActivity( intent );
+                return true;
+            }
+
 
 
         return false;

@@ -9,22 +9,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <activity android:name=".Help">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chel.weatheroutlook.MainActivity" />
+        </activity>
+
         <activity android:name=".Language_1">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.chel.weatheroutlook.MainActivity" />
         </activity>
+
         <activity android:name=".EditLocation">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.chel.weatheroutlook.MainActivity" />
         </activity>
+
         <activity android:name=".Rate">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.chel.weatheroutlook.MainActivity" />
         </activity>
+
         <activity android:name=".Main2Activity" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,6 +43,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
