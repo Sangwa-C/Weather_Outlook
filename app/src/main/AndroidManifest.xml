@@ -14,7 +14,11 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.chel.weatheroutlook.MainActivity" />
         </activity>
-        <activity android:name=".EditLocation" />
+        <activity android:name=".EditLocation">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.chel.weatheroutlook.MainActivity" />
+        </activity>
         <activity android:name=".Rate">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
