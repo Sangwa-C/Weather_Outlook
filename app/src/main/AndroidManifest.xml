@@ -9,17 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".HomeActivity">
+        <activity android:name=".LanguageActivity"></activity>
+        <activity android:name=".PrivateActivity" />
+        <activity android:name=".RateActivity" />
+        <activity android:name=".NavigationActivity" />
+        <activity android:name=".LocationAtivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".CenterActivity2" />
+        <activity android:name=".CenterActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
