@@ -61,6 +61,7 @@
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                android:layout_marginTop="27dp"
                 android:id="@+id/clickForCloth"
                 android:src="@drawable/ic_cloud_circle_black_24dp"/>
 
