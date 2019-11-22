@@ -25,7 +25,8 @@ import butterknife.ButterKnife;
 
 public class ApiActivity extends AppCompatActivity {
 
-//eliane's codes
+//  eliane's codes
+
     public static final String TAG = ApiActivity.class.getSimpleName();
     private Double mMaxTemp, mMinTemp;
     private String mDescription;
