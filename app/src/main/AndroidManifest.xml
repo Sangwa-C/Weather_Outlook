@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ClothingActivity"></activity>
         <activity android:name=".GenderActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,9 +41,7 @@
                 android:value="com.chel.weatheroutlook.MainActivity" />
         </activity>
         <activity android:name=".Main2Activity" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
         <activity android:name=".HomeActivity" />
 
         <meta-data
