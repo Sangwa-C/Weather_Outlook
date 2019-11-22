@@ -9,14 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RateActivity"></activity>
+        <activity android:name=".GenderActivity"></activity>
+        <activity android:name=".RateActivity" />
         <activity android:name=".LanguageActivity" />
         <activity android:name=".PrivateActivity" />
         <activity android:name=".NavigationActivity" />
         <activity android:name=".LocationAtivity" />
         <activity android:name=".SearchActivity" />
         <activity android:name=".HelpActivity" />
-        <activity android:name=".CenterActivity"></activity>
+        <activity android:name=".CenterActivity" />
         <activity android:name=".Language_1">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
