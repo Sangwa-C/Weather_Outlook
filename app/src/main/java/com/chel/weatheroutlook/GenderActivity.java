@@ -12,23 +12,19 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class GenderActivity extends AppCompatActivity  implements View.OnClickListener{
-    public static final String TAG = MainActivity.class.getSimpleName();
+    public static final String TAG = GenderActivity.class.getSimpleName();
     @BindView(R.id.maleProfile) ImageView mMaleProfile;
     @BindView(R.id.femaleProfile) ImageView mFemaleProfile;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_gender );
         ButterKnife.bind(this);
-
         mMaleProfile.setOnClickListener(this);
         mFemaleProfile.setOnClickListener(this);
     }
-
     @Override
     public void onClick(View v) {
-
         if (v==mMaleProfile){
             Intent intent = new Intent(GenderActivity.this,MainActivity.class);
             intent.putExtra("gender","male");
@@ -41,6 +37,5 @@ public class GenderActivity extends AppCompatActivity  implements View.OnClickLi
             Log.i(TAG,"female avatar selected");
             startActivity(intent);
         }
-
     }
 }

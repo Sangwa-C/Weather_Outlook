@@ -92,8 +92,8 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra( "maxTemp" , mMaxTemp.toString() );
                 intent.putExtra( "description" , mDescription );
                 intent.putExtra( "gender" , gender );
-                Log.i( TAG , "maximum: " + mMaxTemp );
-                Log.i( TAG , "minimum: " + mMinTemp );
+                Log.i( TAG , "max: " + mMaxTemp );
+                Log.i( TAG , "min: " + mMaxTemp );
                 Log.i( TAG , mDescription );
                 Log.i( TAG , gender );
                 startActivity( intent );
@@ -193,7 +193,12 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent( MainActivity.this , EditLocation.class );
             startActivity( intent );
             return true;
-        } else if (id == R.id.nav_help) {
+        } else if (id == R.id.nav_Privacy) {
+            Intent intent = new Intent( MainActivity.this , PrivateActivity.class );
+            startActivity( intent );
+            return true;
+
+        }else if (id == R.id.nav_help) {
             Intent intent = new Intent( MainActivity.this , HelpActivity.class );
             startActivity( intent );
             return true;

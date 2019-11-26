@@ -15,6 +15,8 @@
                     android:icon="@drawable/ic_language_black_24dp"
                     android:title="Language" />
 
+
+
 <!--                <item-->
 <!--                    android:id="@+id/nav_settings"-->
 <!--                    android:icon="@drawable/ic_settings_black_24dp"-->
@@ -30,6 +32,11 @@
                 android:id="@+id/nav_help"
                 android:icon="@drawable/ic_help_black_24dp"
                 android:title="help" />
+
+            <item
+                android:id="@+id/nav_Privacy"
+                android:icon="@drawable/ic_lock_black_24dp"
+                android:title="Privacy" />
 
             <item
                 android:id="@+id/nav_rate"

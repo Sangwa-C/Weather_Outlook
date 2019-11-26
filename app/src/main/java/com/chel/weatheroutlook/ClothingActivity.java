@@ -45,7 +45,7 @@ public class ClothingActivity extends AppCompatActivity {
                 else if (mMinTemp>20.900 && mMaxTemp<=25.900){
                     int imageResource = getResources().getIdentifier("@drawable/warm",null,this.getPackageName());
                     mImage.setImageResource(imageResource);
-                    Log.i(TAG,"SUCESS");
+                    Log.i(TAG,"SUCcESS");
                 }
                 else if (mMinTemp>25.900 && mMaxTemp<=30.900){
                     int imageResource = getResources().getIdentifier("@drawable/casual",null,this.getPackageName());
@@ -77,7 +77,7 @@ public class ClothingActivity extends AppCompatActivity {
                     mImage.setImageResource(imageResource);
                 }
                 else if (mMinTemp>20.900 && mMaxTemp<=25.900){
-                    int imageResource = getResources().getIdentifier("@drawable/fwarm",null,this.getPackageName());
+                    int imageResource = getResources().getIdentifier("@drawable/fcasual",null,this.getPackageName());
                     mImage.setImageResource(imageResource);
                 }
                 else if (mMinTemp>25.900 && mMaxTemp<=30.900){
