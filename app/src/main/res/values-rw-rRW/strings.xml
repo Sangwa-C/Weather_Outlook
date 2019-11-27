@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weather Outlook</string>
+    <string name="textView2" translatable="false">Umukobwa</string>
+    <string name="textView3" translatable="false">Umugore</string>
+    <string name="button5" translatable="false">Hindura ururimi</string>
+</resources>

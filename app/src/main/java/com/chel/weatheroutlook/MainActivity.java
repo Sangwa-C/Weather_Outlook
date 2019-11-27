@@ -7,10 +7,13 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.location.Location;
 import android.net.Network;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,10 +21,14 @@ import android.widget.Toast;
 import com.google.android.material.navigation.NavigationView;
 
 import butterknife.BindView;
+import io.paperdb.Paper;
 
 public class MainActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
+
+    TextView textView2;
+
 //    @BindView(R.id.clothesTextView) TextView mClothesTextView;
 
     @Override
@@ -43,6 +50,25 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         NavigationView nvDrawer = (NavigationView) findViewById( R.id.nav_header );
         setupDrawerContent(  nvDrawer);
+
+
+        textView2 = (TextView)findViewById( R.id.textView2 );
+
+        Paper.init( this );
+
+        String language = Paper.book().read("language");
+        if (language==null)
+            Paper.book().write( "language", "en" );
+        
+        updateView((String) Paper.book().read( "language" ));
+
+    }
+
+    private void updateView(String lang) {
+        Context context = LocalHelper.setLocale(this, lang);
+        Resources resources = context.getResources();
+
+        textView2.setText( resources.getString( R.string.textView2 ) );
     }
 
     @Override
@@ -52,7 +78,19 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
 
-        return super.onOptionsItemSelected( item );
+        if(item.getItemId() == R.id.language_en){
+            Paper.book().write( "language", "en" );
+            updateView( (String )Paper.book().read( "language" ));
+        }
+
+        if(item.getItemId() == R.id.language_vi){
+            Paper.book().write( "language", "vi" );
+            updateView( (String )Paper.book().read( "language" ));
+        }
+
+
+
+        return true;
     }
 
     public void selectItemDrawer(MenuItem menuItem){
@@ -107,7 +145,19 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-//       if(v == mFindMallButton) {
+    @Override
+    protected void attachBaseContext(Context newBase){
+        super.attachBaseContext( LocalHelper.onAttach( newBase, "en" ) );
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate( R.menu.menu,menu );
+        return super.onCreateOptionsMenu( menu );
+    }
+
+
+    //       if(v == mFindMallButton) {
 //        String location = mLocationEditText.getText().toString();
 //        saveLocationToFirebase(location);
 //        Intent cheHome = new Intent(ImagesActivity.this, MallsActivity.class);

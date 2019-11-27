@@ -5,14 +5,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/activity_main"
+    android:layout_gravity="center"
     android:textColor="#FDF8FCFC"
     tools:context="MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="girl"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="women"
+            android:textSize="30dp"/>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:text="change language" />
+
+    </RelativeLayout>
+
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:id="@+id/f1content"/>
+        android:id="@+id/f1content">
+
+
+    </FrameLayout>
 
 
 
