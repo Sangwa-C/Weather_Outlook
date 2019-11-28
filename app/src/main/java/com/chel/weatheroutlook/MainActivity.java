@@ -15,12 +15,6 @@ import android.widget.LinearLayout;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-    public static final String TAG = MainActivity.class.getSimpleName();
-    @BindView(R.id.maleProfile) LinearLayout mMaleProfile;
-    @BindView(R.id.femaleProfile) LinearLayout mFemaleProfile;
-
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -42,13 +36,16 @@ import java.util.Locale;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+    public static final String TAG = MainActivity.class.getSimpleName();
+    @BindView(R.id.maleProfile) LinearLayout mMaleProfile;
+    @BindView(R.id.femaleProfile) LinearLayout mFemaleProfile;
+
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
 
 //  eliane's codes
 
-    public static final String TAG = MainActivity.class.getSimpleName();
     private Double mMaxTemp, mMinTemp;
     private String mDescription;
     private String gender;

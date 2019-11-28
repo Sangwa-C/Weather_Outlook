@@ -42,8 +42,6 @@ public class ClothingActivity extends AppCompatActivity {
         Double mMinTemp = Double.parseDouble(minStringTemp);
 
 
-        Double mMaxTemp = Double.parseDouble(maxStringTemp);
-        Double mMinTemp = Double.parseDouble(minStringTemp);
 
         switch(gender){
             case "male":
@@ -75,7 +73,6 @@ public class ClothingActivity extends AppCompatActivity {
 
                     int imageResource = getResources().getIdentifier("@drawable/sunny",null,this.getPackageName());
 
-                    int imageResource = getResources().getIdentifier("@drawable/msunny",null,this.getPackageName());
 
                     mImage.setImageResource(imageResource);
                 }
@@ -105,7 +102,7 @@ public class ClothingActivity extends AppCompatActivity {
                 }
                 else if (mMinTemp>20.900 && mMaxTemp<=25.900){
 
-                    int imageResource = getResources().getIdentifier("@drawable/fwarm",null,this.getPackageName());
+
 
                     int imageResource = getResources().getIdentifier("@drawable/fcasual",null,this.getPackageName());
 
@@ -139,5 +136,5 @@ public class ClothingActivity extends AppCompatActivity {
 
 }
 
-}
+
 

@@ -12,12 +12,14 @@
         android:theme="@style/AppTheme">
         <activity android:name=".ClothingActivity"></activity>
         <activity android:name=".ApiActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme"
+            android:hardwareAccelerated="false"
+            android:largeHeap="true">
+        </activity>
 
-        android:theme="@style/AppTheme"
-        android:hardwareAccelerated="false"
-        android:largeHeap="true">
-        <activity android:name=".ClothingActivity"></activity>
+
+
         <activity android:name=".GenderActivity">
 
             <intent-filter>
@@ -50,7 +52,6 @@
                 android:value="com.chel.weatheroutlook.MainActivity" />
         </activity>
         <activity android:name=".Main2Activity" />
-        <activity android:name=".MainActivity"></activity>
         <activity android:name=".HomeActivity" />
 
         <meta-data
