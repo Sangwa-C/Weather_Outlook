@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ClothingActivity">
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -110,6 +111,14 @@
 
 
         </LinearLayout>
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="100dp"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
 
 
 </RelativeLayout>
