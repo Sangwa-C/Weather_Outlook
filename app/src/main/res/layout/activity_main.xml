@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
 <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
@@ -10,6 +14,101 @@
     tools:context="MainActivity">
 
 <!--    <TextView-->
+
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:text="Click to Choose"-->
+<!--        android:textSize="18dp"-->
+<!--        android:layout_above="@+id/layoutGender"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginBottom="30dp"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:id="@+id/layoutGender">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/maleProfile"
+            android:background="@drawable/border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textSize="20dp"
+                android:gravity="center"/>
+
+<!--            <ImageView-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="130dp"-->
+<!--                android:layout_marginRight="30dp"-->
+<!--                android:src="@drawable/maleprofile"-->
+<!--                android:id="@+id/maleProfile"-->
+<!--                android:elevation="18dp"-->
+<!--                android:outlineAmbientShadowColor="#000000"/>-->
+            <com.yinglan.shadowimageview.ShadowImageView
+                android:id="@+id/maleProfile1"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                app:shadowRound="8dp"
+                android:elevation="10dp"
+                android:layout_centerInParent="true"
+                app:shadowSrc="@drawable/maleprofile"
+                app:shadowColor="#000000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/femaleProfile"
+            android:background="@drawable/border"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Female"
+                android:textSize="20dp"
+                android:gravity="center" />
+
+<!--            <ImageView-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="130dp"-->
+<!--                android:src="@drawable/femaleprofile"-->
+<!--                android:id="@+id/femaleProfile"-->
+<!--                android:elevation="18dp" />-->
+
+            <com.yinglan.shadowimageview.ShadowImageView
+                android:id="@+id/femaleProfile1"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                app:shadowRound="8dp"
+                android:elevation="10dp"
+                android:layout_centerInParent="true"
+                app:shadowSrc="@drawable/femaleprofile"
+                app:shadowColor="#000000"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
 <!--        android:id="@+id/clothesTextView"-->
 <!--        android:layout_width="412dp"-->
 <!--        android:layout_height="wrap_content"-->
@@ -269,3 +368,4 @@
 
 
 </androidx.drawerlayout.widget.DrawerLayout>
+

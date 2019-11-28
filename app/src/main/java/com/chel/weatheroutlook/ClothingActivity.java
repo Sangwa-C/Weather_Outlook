@@ -1,11 +1,21 @@
 package com.chel.weatheroutlook;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
+
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -26,8 +36,15 @@ public class ClothingActivity extends AppCompatActivity {
         String maxStringTemp = intent.getStringExtra("maxTemp");
         String minStringTemp = intent.getStringExtra("minTemp");
         String gender = intent.getStringExtra("gender");
+
+
         Double mMaxTemp = Double.parseDouble(maxStringTemp);
         Double mMinTemp = Double.parseDouble(minStringTemp);
+
+
+        Double mMaxTemp = Double.parseDouble(maxStringTemp);
+        Double mMinTemp = Double.parseDouble(minStringTemp);
+
         switch(gender){
             case "male":
                 if (mMaxTemp<=5.000){
@@ -45,14 +62,21 @@ public class ClothingActivity extends AppCompatActivity {
                 else if (mMinTemp>20.900 && mMaxTemp<=25.900){
                     int imageResource = getResources().getIdentifier("@drawable/warm",null,this.getPackageName());
                     mImage.setImageResource(imageResource);
+
+
                     Log.i(TAG,"SUCcESS");
+
                 }
                 else if (mMinTemp>25.900 && mMaxTemp<=30.900){
                     int imageResource = getResources().getIdentifier("@drawable/casual",null,this.getPackageName());
                     mImage.setImageResource(imageResource);
                 }
                 else if (mMinTemp>30.900 && mMaxTemp<=35.900){
+
+                    int imageResource = getResources().getIdentifier("@drawable/sunny",null,this.getPackageName());
+
                     int imageResource = getResources().getIdentifier("@drawable/msunny",null,this.getPackageName());
+
                     mImage.setImageResource(imageResource);
                 }
                 else if (mMaxTemp>35.900){
@@ -63,6 +87,9 @@ public class ClothingActivity extends AppCompatActivity {
                     Log.d(TAG," error male");
                 }
                 break;
+
+
+
             case "female":
                 if (mMaxTemp<=5.000){
                     int imageResource = getResources().getIdentifier("@drawable/fharshwinter",null,this.getPackageName());
@@ -77,7 +104,11 @@ public class ClothingActivity extends AppCompatActivity {
                     mImage.setImageResource(imageResource);
                 }
                 else if (mMinTemp>20.900 && mMaxTemp<=25.900){
+
+                    int imageResource = getResources().getIdentifier("@drawable/fwarm",null,this.getPackageName());
+
                     int imageResource = getResources().getIdentifier("@drawable/fcasual",null,this.getPackageName());
+
                     mImage.setImageResource(imageResource);
                 }
                 else if (mMinTemp>25.900 && mMaxTemp<=30.900){
@@ -96,9 +127,17 @@ public class ClothingActivity extends AppCompatActivity {
                     Log.d(TAG," error female");
                 }
                 break;
+
+
+
+
             default:
                 Log.d(TAG,"Error");
                 break;
         }
     }
+
 }
+
+}
+
