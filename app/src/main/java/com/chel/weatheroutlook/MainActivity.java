@@ -7,14 +7,15 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     public static final String TAG = MainActivity.class.getSimpleName();
-    @BindView(R.id.maleProfile) ImageView mMaleProfile;
-    @BindView(R.id.femaleProfile) ImageView mFemaleProfile;
+    @BindView(R.id.maleProfile) LinearLayout mMaleProfile;
+    @BindView(R.id.femaleProfile) LinearLayout mFemaleProfile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
