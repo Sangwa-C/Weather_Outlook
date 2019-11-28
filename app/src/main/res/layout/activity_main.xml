@@ -5,7 +5,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_gradient"
+    android:background="@drawable/bg3"
     android:textColor="#FDF8FCFC"
     tools:context="MainActivity">
 
@@ -47,14 +47,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="KIGALI, RW"
-                    android:textSize="14dp" />
+                    android:textSize="14dp"
+                    android:textColor="#ffffff"/>
 
                 <TextView
                     android:id="@+id/updated_at"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="20 April 2012, 20:08 PM"
-                    android:textSize="14dp" />
+                    android:textSize="14dp"
+                    android:textColor="#ffffff"/>
             </LinearLayout>
 
             <LinearLayout
@@ -70,7 +72,8 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="Clear Sky"
-                    android:textSize="18dp" />
+                    android:textSize="18dp"
+                    android:textColor="#ffffff"/>
 
                 <TextView
                     android:id="@+id/temp"
@@ -79,7 +82,8 @@
                     android:layout_gravity="center"
                     android:fontFamily="sans-serif-thin"
                     android:text="29°C"
-                    android:textSize="70dp" />
+                    android:textSize="70dp"
+                    android:textColor="#ffffff"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -91,7 +95,8 @@
                         android:id="@+id/temp_min"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Min Temp: 05:05 AM" />
+                        android:text="Min Temp: 05:05 AM"
+                        android:textColor="#ffffff"/>
 
                     <Space
                         android:layout_width="50dp"
@@ -101,7 +106,8 @@
                         android:id="@+id/temp_max"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Max Temp: 05:05 PM" />
+                        android:text="Max Temp: 05:05 PM"
+                        android:textColor="#ffffff"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -157,14 +163,16 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Sunrise"
-                            android:textSize="12dp" />
+                            android:textSize="12dp"
+                            android:textColor="#ffffff"/>
 
                         <TextView
                             android:id="@+id/sunrise"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="06:40 AM"
-                            android:textSize="14dp" />
+                            android:textSize="14dp"
+                            android:textColor="#ffffff"/>
                     </LinearLayout>
 
                     <Space
@@ -193,14 +201,16 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Sunset"
-                            android:textSize="12dp" />
+                            android:textSize="12dp"
+                            android:textColor="#ffffff"/>
 
                         <TextView
                             android:id="@+id/sunset"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="06:40 AM"
-                            android:textSize="14dp" />
+                            android:textSize="14dp"
+                            android:textColor="#ffffff"/>
                     </LinearLayout>
                 </LinearLayout>
 
@@ -239,10 +249,10 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="#131A50"
+        android:background="#FDF8FCFC"
         app:headerLayout="@layout/nav_header"
         app:itemIconTint="#FCBADABA"
-        app:itemTextColor="#FDF8FCFC"
+        app:itemTextColor="#000000"
         app:menu="@menu/drawer_menu">
 
     </com.google.android.material.navigation.NavigationView>
