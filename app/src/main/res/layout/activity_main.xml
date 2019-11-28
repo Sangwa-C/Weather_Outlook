@@ -29,6 +29,8 @@
 <!--        android:textColor="#1F7266"-->
 <!--        android:textSize="20dp" />-->
 
+
+
     <RelativeLayout
             android:id="@+id/mainContainer"
             android:layout_width="match_parent"
@@ -48,6 +50,7 @@
                     android:layout_height="wrap_content"
                     android:text="KIGALI, RW"
                     android:textSize="14dp"
+                    android:layout_marginTop="20dp"
                     android:textColor="#ffffff"/>
 
                 <TextView
